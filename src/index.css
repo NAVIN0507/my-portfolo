@@ -1,13 +1,69 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap');
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+body{
+  background: black;
+}
+h1,h4,p,
+a{
+  color:white ;
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn, .btn-light {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
 }
+
+
+.btn {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(38, 132, 255, 0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #5f10c5 0%, #1e65e2 100%);
+  box-shadow: 0 10px 25px rgba(38, 132, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 5px 15px rgba(38, 132, 255, 0.2);
+}
+
+
+.btn-light {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.btn-light:hover {
+  background: #e6e6e6;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.btn-light:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+

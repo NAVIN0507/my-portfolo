@@ -1,0 +1,57 @@
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left, .right {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.location, .phone, .email {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.right h4 {
+  margin-bottom: 10px;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  margin-right: 15px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #00d8ff;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social a {
+    margin: 10px;
+  }
+}

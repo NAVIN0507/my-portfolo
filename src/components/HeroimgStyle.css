@@ -1,0 +1,91 @@
+/* Full hero container */
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  
+  /* Image wrapper */
+  .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  /* Background image */
+  .intro-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Optional overlay to darken the image */
+  .mask::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  /* Content over the image */
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .content p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .btn-light {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  
+  .btn-light:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
