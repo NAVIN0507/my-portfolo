@@ -8,9 +8,6 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
 
-  const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
-  };
 
   const closeMenu = () => {
     setMenuVisible(false);
